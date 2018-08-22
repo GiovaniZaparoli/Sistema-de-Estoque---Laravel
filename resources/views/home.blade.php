@@ -4,19 +4,12 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
-
-                <div class="panel-body">
-                    @if (session('status'))
-                        <div class="alert alert-success">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
-                </div>
-            </div>
+            <img src="https://png.pngtree.com/element_origin_min_pic/17/01/07/307db1f32ccb8cb1e1a5b6bcbad6ff5b.jpg" alt="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3 mt-3 d-flex justify-content-center">
+            <a class="btn btn-primary btn-lg" href="/produtos">Listar Produtos</a>
         </div>
     </div>
 </div>

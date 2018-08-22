@@ -1,6 +1,13 @@
 @extends('principal')
 
 @section('conteudo')
+
+    <div class="row">
+        <div class="offset-8 col-md-4">
+            <a class="btn btn-success mt-3" href="/">Inicio</a>
+            <a class="btn btn-success mt-3" href="/produtos/novo">Cadastrar Produto</a>
+        </div>
+    </div>
     <h1 class="display text-center mt-5 mb-4">Listagem de Produtos</h1>
     <div class="container-fluid d-flex justify-content-center text-center">
         <div class="row">
@@ -13,6 +20,7 @@
                             <td scope="col">Descrição</td>
                             <td scope="col">Quantidade</td>
                             <td scope="col">Tamanho</td>
+                            <td scope="col">Categoria</td>
                             <td scope="col">Detalhes</td>
                             <td scope="col">Excluir</td>
                         </tr>

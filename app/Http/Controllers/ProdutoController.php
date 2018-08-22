@@ -47,7 +47,6 @@ class ProdutoController extends Controller
     {
         $conteudo = Produto::create($request->all());
         SendEmail::dispatch($conteudo);
-        return redirect()->route('listagem');
-        
+        return redirect()->route('listagem');   
     }
 }

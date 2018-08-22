@@ -19,7 +19,9 @@ Route::get('/produtos/remove/{id}', 'ProdutoController@remove');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('', 'HomeController@index')->name('home');
 
 Route::post('send', 'MailController@send');
-Route::get('Contato', 'MailController@form');
+
+Route::get('/categorias/novo', 'CategoriaController@novo');
+Route::post('/categoria/create', 'CategoriaController@create');
