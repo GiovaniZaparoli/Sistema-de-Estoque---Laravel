@@ -19,7 +19,8 @@ Route::get('/produtos/remove/{id}', 'ProdutoController@remove');
 
 Auth::routes();
 
-Route::get('', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('', 'HomeController@index');
 
 Route::post('send', 'MailController@send');
 
