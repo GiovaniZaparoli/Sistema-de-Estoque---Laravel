@@ -16,7 +16,6 @@ Route::get('/produtos/show/{id}', 'ProdutoController@show');
 Route::get('/produtos/novo', 'ProdutoController@novo' );
 Route::post('/produtos/create', 'ProdutoController@create');
 Route::get('/produtos/remove/{id}', 'ProdutoController@remove');
-
 Auth::routes();
 
 

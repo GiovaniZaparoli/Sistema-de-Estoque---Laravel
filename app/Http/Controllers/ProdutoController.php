@@ -11,6 +11,8 @@ use Illuminate\Support\Facades\Mail;
 use App\Mail\Mailtrap;
 use App\User;
 use App\Jobs\SendEmail;
+use Stichoza\GoogleTranslate\TranslateClient;
+use App\Providers\TranslateProvider;
 
 class ProdutoController extends Controller
 {
@@ -21,7 +23,7 @@ class ProdutoController extends Controller
 
     public function index()
     {
-        $produtos = Produto::all();
+        $produtos = Produto::paginate(15);
         return view('listagem')->with('produtos', $produtos);
     }
 
