@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('/', 'HomeController@index');
 Route::get('/produtos', 'ProdutoController@index')->name('listagem');
 Route::get('/produtos/show/{id}', 'ProdutoController@show');
 Route::get('/produtos/novo', 'ProdutoController@novo' );
@@ -19,10 +19,13 @@ Route::get('/produtos/remove/{id}', 'ProdutoController@remove');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('', 'HomeController@index');
 
+Route::get('/home', 'HomeController@index');
 Route::post('send', 'MailController@send');
 
 Route::get('/categorias/novo', 'CategoriaController@novo');
 Route::post('/categoria/create', 'CategoriaController@create');
+
+Route::post('/clima', 'ClimaController@tempo');
+
+Route::get('/cidade', 'ClimaController@cidade');

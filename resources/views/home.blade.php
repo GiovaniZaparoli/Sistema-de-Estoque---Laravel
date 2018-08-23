@@ -12,5 +12,10 @@
             <a class="btn btn-primary btn-lg" href="/produtos">Listar Produtos</a>
         </div>
     </div>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3 mt-3 d-flex justify-content-center">
+            <a class="btn btn-primary btn-lg" href="/cidade">Clima dos próximos dias</a>
+        </div>
+    </div>
 </div>
 @endsection
